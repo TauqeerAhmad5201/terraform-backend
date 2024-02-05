@@ -10,10 +10,10 @@ terraform {
 
   // helping terraform to know on which backend tfstate lock file will be saved. 
   backend "s3" {
-    bucket = "terraform-remote-backend"
+    bucket = "terraform-remote-backend-tauqeer-007"
     key    = "terraform.tfstate"
     region = "us-east-2"
-    dynamodb_table = "terraform-demo-state-table-2"
+    dynamodb_table = "terraform-demo-state-table"
   }
 }
 
